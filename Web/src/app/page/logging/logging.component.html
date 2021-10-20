@@ -1,0 +1,32 @@
+<div class="container my-3 form__container">
+    <form class="form__logging" (ngSubmit)="OnSubmit()">
+        <div class="mb-3">
+            <label for="login__email" class="form-label">Email :</label>
+            <input type="email" [(ngModel)]="email" name="email" class="form-control bg-dark text-white"
+                id="login__email" placeholder="email" aria-describedby="emailHelp" />
+        </div>
+
+        <div class="mb-3">
+            <label for="login__password" class="form-label">Password :</label>
+            <input type="password" [(ngModel)]="password" name="login__password" class="form-control bg-dark text-white"
+                id="login__password" placeholder="password" />
+        </div>
+
+        <div class="logging__btn">
+            <button type="submit" class="btn btn-primary">LOGGING</button>
+
+            <div class="nav__item">
+                <a routerLink="/user">
+                    <button type="button" class="btn btn-secondary">
+                        CREAT USER
+                    </button>
+                </a>
+
+                <a routerLink="/">
+                    <button type="button" class="btn btn-danger">HOME</button>
+                </a>
+            </div>
+        </div>
+    </form>
+
+</div>
